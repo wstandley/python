@@ -14,7 +14,7 @@ cost_1 = float(input("How much was the cost of the first order? ")) # Input line
 cost_2 = float(input("How much was the cost of the second order? "))
 cost_3 = float(input("How much was the cost of the third order? "))
 
-cost = cost_1 + cost_2 + cost_3 # Has to go before variable calcularions
+cost = cost_1 + cost_2 + cost_3 # Has to go before variable calculations
 
 tip_amt = cost * tip_percent
 tax_amt = cost * tax_rate
