@@ -6,9 +6,24 @@
 # Count
 
 count = 99
-while count >= 0:
+
+# While Statement
+
+while count > 2:
     print(f"{count} bottles of beer on the wall\n{count} bottles of beer") # Print Statement
 
-    count = count - 1 # Causes count to add one each time
+    count = count - 1 # Causes count to subtract one each time
 
-    print(f"Take one down, pass it around {count} bottles of beer on the wall!")
+    print(f"Take one down, pass it around\n{count} bottles of beer on the wall!\n")
+
+# While statement at specific count
+
+while count == 2:
+    print(f"{count} bottles of beer on the wall\n{count} bottles of beer\nTake one down, pass it around\n{count} bottle of beer on the wall!\n")
+    
+    count = count - 1
+    
+while count == 1:
+    print(f"{count} bottle of beer on the wall\n{count} bottle of beer\nTake one down, pass it around\nNo bottles of beer on the wall!\n")
+
+    count = count - 1
