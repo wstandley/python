@@ -1,41 +1,41 @@
-# """
-#     This is our class example for creating lists in Python
-# """
+"""
+   This is our class example for creating lists in Python
+"""
 
-# # Playing with Sorting
+# Playing with Sorting
 
-# my_list = [ "1" , "2" , "3" , "A" , "B" , "C" , "a" , "b" , "c" ]
-# my_list.sort()
-# print(my_list)
+my_list = [ "1" , "2" , "3" , "A" , "B" , "C" , "a" , "b" , "c" ]
+my_list.sort()
+print(my_list)
 
-# # Append
+# Append
 
-# my_list.append(3)
-# print(my_list)
+my_list.append(3)
+print(my_list)
 
-# # Remove
+# Remove
 
-# my_list.remove(3)
-# print(my_list)
+my_list.remove(3)
+print(my_list)
 
-# # Reverse
+# Reverse
 
-# my_list.reverse()
-# print(my_list)
+my_list.reverse()
+print(my_list)
 
-# # Pop
+# Pop
 
-# popped = my_list.pop(0)
-# print(popped)
-# print(my_list)
+popped = my_list.pop(0)
+print(popped)
+print(my_list)
 
-# # Len
+# Len
 
-# print(len(my_list))
+print(len(my_list))
 
 
-# for item in my_list:
-#     print(item)
+for item in my_list:
+    print(item)
 
 
 
