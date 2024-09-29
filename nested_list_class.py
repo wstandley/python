@@ -1,4 +1,4 @@
-# Tracking blood sugar 
+# Tracking blood sugar
 # By day
 # And by meal
 
