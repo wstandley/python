@@ -10,7 +10,7 @@ def main():
     print(code["A"])
 
     # using get()
-    print(code.get("R","😎"))
+    print(code.get("R","😎")) # Doesnt have R in code, so it does the other emoji
 
     # iterate through all keys
     for key in code:
