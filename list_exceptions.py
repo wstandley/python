@@ -7,19 +7,17 @@ def main():
     
     try:
         # Input for what artist top spot to take
-        artist_index = int(input("Enter the index of the artist to replace: "))
-
+        artist_index = int(input("Enter the spot of the artist to replace: "))
         # Input for what artist to add to list
         artist_name = input("Enter the new artist name: ")
 
-        for name in top_artists:
-            name = (artist_index - 1)
-            # Remove whatever artist is in the index spot
-            top_artists.remove(name)
-            # Append artist name to the list
-            top_artists.append(artist_name)
+
+        # Removes Artist from List and replace it
+        top_artists[artist_index - 1] = artist_name
 
         print(f"Updated List: {top_artists}")
+        
+    # Except those errors
     except (ValueError, IndexError) as e:
         print(f"An error occurred: {e}")
     
