@@ -2,6 +2,7 @@
     For Assignment PE2 Module 2.6: Errors
     Creating a program that will ask the user to input names of flowers and add them to a list. Program should be able to handle exceptions
 """
+
 flowers = []
 
 valid = False
