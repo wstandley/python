@@ -4,4 +4,4 @@
 
 # Initialize Class
 class Person:
-    def __init__()
+    def __init__():
