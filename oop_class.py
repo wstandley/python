@@ -24,6 +24,8 @@ class Student:  # class names are capitalized
 def main():
     student_1 = Student("Meri", "Kasprak", "123456", "Super Senior")
     print(student_1.get_info())
+    student_2 = Student("Fred", "Flinstsont", "234566", "Freshman")
+    print(student_2.get_info())
 
 
 main()
