@@ -20,8 +20,7 @@ class Student:  # class names are capitalized
     def get_info(self):
         return f"{self.__first_name} {self.__last_name}, ID: {self.__student_id}, Year: {self.__year}"
 
-        # Getter for first_name
-
+    # Getter for first_name
     def get_first_name(self):
         return self.__first_name
 
