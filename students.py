@@ -65,8 +65,10 @@ def main():
 
     # Check if it has a specific attribute
     print(hasattr(my_dog, "_Dog__pet_id")) # True
-    print(hasattr(his_dog, "_Dog__pet_id"))
-    print(hasattr(her_dog, "_Dog__pet_id"))
+    print(hasattr(his_dog, "_Dog__pet_name")) # True
+    print(hasattr(her_dog, "_Dog__owner_last_name")) # True
+    print(hasattr(my_dog, "_Dog__owner_first_name")) # True
+    print(hasattr(his_dog, "_Dog__owner_middle_name")) # False
 
 
 main()
