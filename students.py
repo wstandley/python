@@ -46,17 +46,21 @@ class Dog:
     
     # Method to print all details of the pet and owner
     def display_pet_info(self):
-        print("\n Pet and Owner Details: ", vars(self))
+        print(self.__owner_first_name + " " + self.__owner_last_name)
+        print(self.__pet_id)
+        print(self.__pet_name)
 
 
 
 def main():
     # Main Function
     my_dog = Dog("Will", "Standley", "4115", "Sir BarksALot")
-    print(my_dog.get_owner_first_name())
-    print(my_dog.get_owner_last_name())
-    print(my_dog.get_pet_id())
-    print(my_dog.get_pet_name())
+    his_dog = Dog("Camren", "Swanson", "3030", "Cheddar Bob")
+    her_dog = Dog("Gil", "Harder", "2001", "Grey")
+
+    my_dog.display_pet_info()
+    his_dog.display_pet_info()
+    her_dog.display_pet_info()
 
 
 main()

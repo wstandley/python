@@ -59,8 +59,10 @@ def main():
     ducktor_quacks.print_info()
 
     # Has Attribute
-    print(hasattr(Student, "_Student__first_name")) # True
-    print(hasattr(Student, "middle_name")) # False
+    student = Student("Jane", "Doe", "12345")
+
+    print(hasattr(student, "_Student__first_name")) # True
+    print(hasattr(student, "middle_name")) # False
 
 # Calling the main function
 main()
