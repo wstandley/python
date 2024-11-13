@@ -62,7 +62,7 @@ def main():
     student = Student("Jane", "Doe", "12345")
 
     print(hasattr(student, "_Student__first_name")) # True
-    print(hasattr(student, "middle_name")) # False
+    print(hasattr(student, "_Student__middle_name")) # False
 
 # Calling the main function
 main()

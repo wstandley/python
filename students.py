@@ -58,9 +58,15 @@ def main():
     his_dog = Dog("Camren", "Swanson", "3030", "Cheddar Bob")
     her_dog = Dog("Gil", "Harder", "2001", "Grey")
 
+    # Display Info
     my_dog.display_pet_info()
     his_dog.display_pet_info()
     her_dog.display_pet_info()
+
+    # Check if it has a specific attribute
+    print(hasattr(my_dog, "_Dog__pet_id")) # True
+    print(hasattr(his_dog, "_Dog__pet_id"))
+    print(hasattr(her_dog, "_Dog__pet_id"))
 
 
 main()
