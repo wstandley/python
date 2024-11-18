@@ -24,3 +24,7 @@ try:
     set_level(101)
 except InvalidLevelError as e:
     print(f"Error: {e}")
+else:
+    print("Change accepted")
+finally:
+    print("Have a nice day!")
