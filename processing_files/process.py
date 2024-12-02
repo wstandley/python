@@ -10,27 +10,29 @@ def main():
     # always in a try statement
     try:
         with open('processing_files/sales_totals.txt', 'r') as file:
-            # Opens File
-            content = file.readline() # reads line
-            content = content.strip('\n') # Takes out newline symbol
-            while content:
-                print(content, end='  ') # prints each item
-                content = file.readline() # readsline
-                content = content.strip('\n') # Takes out newline symbol
-        for line in content:
-            line = float(line) # Converts each entry to a float
-            
-            # NEED TO ADD LINES TOGETHER
-            
-            total = line + line
+            # Setting total and count to 0 for math 
+            total = 0
+            count = 0
+
+            lines = file.readlines() # reads line
+
+            for line in lines: 
+                line = line.strip('\n') # Takes out newline symbol
+
+                # Prints each line
+                print(line)
+
+                number = float(line) # Converts each entry to a float
+                total += number # Adds up running total
+                count += 1 # Adds up total entries
         
-        entries = 11
-        average = total/entries
+
+        average = total / count # Calculates Average
 
         # Print Total
         print(f"Total: {total:.2f}")
         # Print Entry Amount
-        print(f"Number of Entries: {entries}")
+        print(f"Number of Entries: {count}")
         # Print Average
         print(f"Average: {average:.2f}")
             
