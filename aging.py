@@ -39,7 +39,12 @@ def main():
 
         # Calculates total months old
         # Takes total years old and multiplies by 12 months in a year to get total months
-        delta_months = delta_years * 12
+        delta_month = delta_years * 12
+        # Remaining calculates how many months are missing from delta_month
+        remaining = (delta.days - (delta_years * 365) ) // 30
+        # Adds the remaining months to toal months
+        delta_months = delta_month + remaining
+
         print(f"You are {delta_months} months old")
 
         # Calculates total weeks old
